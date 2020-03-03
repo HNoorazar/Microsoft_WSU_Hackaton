@@ -1,0 +1,35 @@
+\section{Harmonized LandSat Imagery}
+
+Install the blob for working with harmonized images:
+
+\begin{description}
+
+\item [Use Conda] to install rasterio (not pip):~{\scriptsize{\colorbox{lightgray}{ conda install -c conda-forge/label/dev rasterio}}}
+
+\item [Use pip] to install azure:~{\scriptsize{\colorbox{lightgray}{pip install azure-storage-blob}}}
+
+\item [Replace BlockBlobService]  with BlobServiceClient:
+
+{\scriptsize{\colorbox{lightgray}{{\color{Green}{from}} azure.storage.blob {\color{Green}{import}} BlobServiceClient \# BlockBlobService }}}
+
+
+
+\end{description}
+
+\hrule
+\hrule
+\func{gen\_CM\_POP\_data.R} and \func{CodlingMothGenerations.R}
+
+{\scriptsize \begin{lstlisting}[backgroundcolor = \color{lightgray},
+                   language = C,
+                   xleftmargin = .5cm,
+                   xrightmargin = 1.2cm,
+                   framexleftmargin = .05cm]
+/data/hydro/users/giridhar/giridhar/codmoth_pop/alldata_us_locations
+\end{lstlisting}}
+
+\{\vari{PPT}, \vari{TMAX}, \vari{TMIN}, \vari{WIND}\} 	
+\hrule
+\hrule
+
+
